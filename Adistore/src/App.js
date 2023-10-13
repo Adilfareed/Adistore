@@ -9,6 +9,7 @@ import Header from "./components/Header";
 import Catagories from "./Catagories";
 import SingleProduct from "./SingleProduct";
 import ApppContext from "./utils/Contex";
+import Newsletter from "./components/footer/newslater/Newslater";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
             <Route path="/cart" element={<Cart />} />
             <Route path="*" element={<Errorpage />} />
           </Routes>
+          <Newsletter/>
         </ApppContext>
       </Router>
     </>
