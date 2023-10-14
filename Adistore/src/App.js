@@ -20,6 +20,7 @@ const App = () => {
         <ApppContext>
           <Header />
           <Routes>
+         
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/products/:id" element={<SingleProduct />} />
