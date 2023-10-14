@@ -19,27 +19,25 @@ const Footer = () => {
           <div className="c-item">
             <FaLocationArrow />
             <div className="text">
-              Kayaloram Rd, Punnamada, Kottankulangara, Alappuzha, Kerala,
-              688006
+             Karachi Pakistan
             </div>
           </div>
           <div className="c-item">
             <FaMobileAlt />
-            <div className="text">Phone: 0471 272 0261</div>
+            <div className="text">Phone: 03323743153</div>
           </div>
           <div className="c-item">
             <FaEnvelope />
-            <div className="text">Email: store@jsdev.com</div>
+            <div className="text">Email:adilkhan56888@gmail.com</div>
           </div>
         </div>
         <div className="col">
           <div className="title">Categories</div>
-          <span className="text">Headphones</span>
-          <span className="text">Smart Watches</span>
-          <span className="text">Bluetooth Speakers</span>
-          <span className="text">Wireless Earbuds</span>
-          <span className="text">Home Theatre</span>
-          <span className="text">Projectors</span>
+          <span className="text"> Scrunchies</span>
+          <span className="text"> Hair Catchers</span>
+          <span className="text">Hair Clips</span>
+          <span className="text">Hair Extensions</span>
+          
         </div>
         <div className="col">
           <div className="title">Pages</div>
@@ -54,7 +52,7 @@ const Footer = () => {
       <div className="bottom-bar">
         <div className="bottom-bar-content">
           <span className="text">
-            JSDEVSTORE 2022 CREATED BY JS DEV. PREMIUM E-COMMERCE SOLUTIONS.
+           Adi's PREMIUM E-COMMERCE SOLUTIONS.
           </span>
           <img src="./images/payments.png" alt="payments" />
         </div>
