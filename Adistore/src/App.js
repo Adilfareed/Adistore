@@ -10,6 +10,7 @@ import Catagories from "./Catagories";
 import SingleProduct from "./SingleProduct";
 import ApppContext from "./utils/Contex";
 import Newsletter from "./components/footer/newslater/Newslater";
+import Footer from "./components/footer/newslater/footer/footer";
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
             <Route path="*" element={<Errorpage />} />
           </Routes>
           <Newsletter/>
+          <Footer/>
         </ApppContext>
       </Router>
     </>
