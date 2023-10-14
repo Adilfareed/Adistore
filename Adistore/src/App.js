@@ -11,6 +11,8 @@ import SingleProduct from "./SingleProduct";
 import ApppContext from "./utils/Contex";
 import Newsletter from "./components/footer/newslater/Newslater";
 import Footer from "./components/Footer1/Footer";
+import Banner from "./components/banner/Banner";
+
 
 
 const App = () => {
@@ -18,6 +20,7 @@ const App = () => {
 
     <> <ApppContext>
       <Header />
+      <Banner/>
       <Newsletter/>
       <Footer/>
       </ApppContext>
