@@ -1,5 +1,5 @@
 import React from "react";
-//import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
 import Contact from "./Contact";
@@ -8,23 +8,30 @@ import Errorpage from "./Errorpage";
 import Header from "./components/Header";
 import Catagories from "./Catagories";
 import SingleProduct from "./SingleProduct";
-import ApppContext from "./utils/Contex";
+import AppContext  from "./utils/Contex";
 import Newsletter from "./components/footer/newslater/Newslater";
 import Footer from "./components/Footer1/Footer";
-import Banner from "./components/banner/Banner";
-
-
 
 const App = () => {
   return (
-
-    <> <ApppContext>
-      <Header />
-      <Banner/>
-      <Newsletter/>
-      <Footer/>
-      </ApppContext>
-      
+    <>
+      <Router>
+        <AppContext>
+          <Header />
+          <Routes>
+          <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/products/:id" element={<SingleProduct />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/catagories/:id" element={<Catagories />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="*" element={<Errorpage />} />
+          </Routes>
+         
+          <Newsletter />
+          <Footer />
+        </AppContext>
+      </Router>
     </>
   );
 };

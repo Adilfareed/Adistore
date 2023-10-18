@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.scss";
 import { FaLocationArrow, FaMobileAlt, FaEnvelope } from "react-icons/fa";
+import paymentimg from "../../images/payments.png"
 
 const Footer = () => {
   return (
@@ -54,7 +55,7 @@ const Footer = () => {
           <span className="text">
            Adi's PREMIUM E-COMMERCE SOLUTIONS.
           </span>
-          <img src="./images/payments.png" alt="payments" />
+          <img src={paymentimg} alt="payments" />
         </div>
       </div>
     </div>

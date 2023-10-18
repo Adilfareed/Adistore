@@ -1,5 +1,6 @@
 import React from "react";
 import "./Banner.scss";
+import bannerimg from "../../images/banner.jpg"
 
 
 const Banner = () => {
@@ -18,7 +19,8 @@ const Banner = () => {
                       <div className="banner-cta v2">Shop Now</div>
                   </div>
               </div>
-              <img className="banner-img"src="./images/banner.jpg" alt="bannerimg" />
+              <img className="banner-img" src={bannerimg} alt="banner img" />
+              
           </div>
       </div>
   );
