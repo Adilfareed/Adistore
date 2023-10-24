@@ -8,9 +8,12 @@ import Errorpage from "./Errorpage";
 import Header from "./components/Header";
 import Catagories from "./Catagories";
 import SingleProduct from "./SingleProduct";
-import AppContext  from "./utils/Contex";
+import AppContext from "./utils/Contex";
 import Newsletter from "./components/footer/newslater/Newslater";
 import Footer from "./components/Footer1/Footer";
+import Banner from "./components/banner/Banner";
+import Catagory from "./components/catagory/Catagory";
+import Products from "./components/Products/Products";
 
 const App = () => {
   return (
@@ -19,7 +22,7 @@ const App = () => {
         <AppContext>
           <Header />
           <Routes>
-          <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/products/:id" element={<SingleProduct />} />
             <Route path="/contact" element={<Contact />} />
@@ -27,11 +30,13 @@ const App = () => {
             <Route path="/cart" element={<Cart />} />
             <Route path="*" element={<Errorpage />} />
           </Routes>
-         
-          <Newsletter />
-          <Footer />
         </AppContext>
       </Router>
+      <Banner />
+      <Catagory />
+      <Products />
+      <Newsletter />
+      <Footer />
     </>
   );
 };

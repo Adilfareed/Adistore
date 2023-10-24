@@ -1,0 +1,41 @@
+@import "../../../mixins.scss";
+.product-cart {
+ padding: 2px;
+ 
+ width: 25%;
+  .thumbimg {
+    width: 50px;
+    border: 1px solid blanchedalmond;
+    border-radius: 20px;
+    :hover{
+        transform: scale(1,2);
+    }
+    
+    @include md {
+      width: 100%;
+      border: 1px solid;
+      border-radius: 20px;
+      transition: all ease 0.3s;
+      cursor: pointer;
+      :hover{
+        transform: scale(1,2);
+    }
+      
+    }
+    
+  }
+  .product-details{
+    .name{
+    margin-left: 10px;
+    text-overflow: ellipsis;
+    display: block;
+   white-space: nowrap;
+   overflow: hidden;
+   }
+   .price{
+    margin-left: 10px;
+    display: block;
+   }
+}
+
+}

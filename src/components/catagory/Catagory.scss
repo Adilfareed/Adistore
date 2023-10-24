@@ -8,10 +8,12 @@
 
   justify-content: space-around;
   align-items: center;
+  margin: 20px 20px 20px 20px ;
 
   @include md {
     max-width: 100%;
     flex-flow: row;
+    margin: 20px 20px 20px 20px ;
   }
   .catimg {
     width: 120px;
