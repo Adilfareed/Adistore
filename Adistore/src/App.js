@@ -22,6 +22,7 @@ const App = () => {
         <AppContext>
           <Header />
           <Routes>
+            <Route path="/Adistore" element={<Home />} />
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/products/:id" element={<SingleProduct />} />
