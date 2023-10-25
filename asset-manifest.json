@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/Adistore/static/css/main.d498f7b0.css",
-    "main.js": "/Adistore/static/js/main.7717b8dd.js",
+    "main.js": "/Adistore/static/js/main.514838e6.js",
     "static/js/787.7b63f85e.chunk.js": "/Adistore/static/js/787.7b63f85e.chunk.js",
     "static/media/banner.webp": "/Adistore/static/media/banner.c72e39e04c6a92fdd43f.webp",
     "static/media/banner.jpg": "/Adistore/static/media/banner.2c998a2f8ebd342a7e92.jpg",
     "static/media/catagory.jpg": "/Adistore/static/media/catagory.8765f257cc24dde548fb.jpg",
     "index.html": "/Adistore/index.html",
     "main.d498f7b0.css.map": "/Adistore/static/css/main.d498f7b0.css.map",
-    "main.7717b8dd.js.map": "/Adistore/static/js/main.7717b8dd.js.map",
+    "main.514838e6.js.map": "/Adistore/static/js/main.514838e6.js.map",
     "787.7b63f85e.chunk.js.map": "/Adistore/static/js/787.7b63f85e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d498f7b0.css",
-    "static/js/main.7717b8dd.js"
+    "static/js/main.514838e6.js"
   ]
 }
