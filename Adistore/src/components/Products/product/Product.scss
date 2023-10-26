@@ -4,21 +4,21 @@
  
  width: 25%;
   .thumbimg {
-    width: 50px;
+    width: 70px;
     border: 1px solid blanchedalmond;
-    border-radius: 20px;
+    
     :hover{
-        transform: scale(1,2);
+        transform: scale(1.2);
     }
     
     @include md {
       width: 100%;
-      border: 1px solid;
-      border-radius: 20px;
+      border: 1px solid blanchedalmond;
+      
       transition: all ease 0.3s;
       cursor: pointer;
       :hover{
-        transform: scale(1,2);
+        transform: scale(1.2);
     }
       
     }

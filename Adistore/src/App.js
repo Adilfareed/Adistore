@@ -1,19 +1,16 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./Home";
-import About from "./About";
-import Contact from "./Contact";
-import Cart from "./Cart";
-import Errorpage from "./Errorpage";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Cart from "./pages/Cart";
+import Errorpage from "./pages/Errorpage";
 import Header from "./components/Header";
-import Catagories from "./Catagories";
-import SingleProduct from "./SingleProduct";
+import Catagories from "./pages/Catagories";
+import SingleProduct from "./pages/SingleProduct";
 import AppContext from "./utils/Contex";
-import Newsletter from "./components/footer/newslater/Newslater";
-import Footer from "./components/Footer1/Footer";
-import Banner from "./components/banner/Banner";
-import Catagory from "./components/catagory/Catagory";
-import Products from "./components/Products/Products";
+
+
 
 const App = () => {
   return (
@@ -31,13 +28,10 @@ const App = () => {
             <Route path="/cart" element={<Cart />} />
             <Route path="*" element={<Errorpage />} />
           </Routes>
+    
         </AppContext>
       </Router>
-      <Banner />
-      <Catagory />
-      <Products />
-      <Newsletter />
-      <Footer />
+      
     </>
   );
 };

@@ -1,0 +1,14 @@
+@import"../mixins.scss";
+.title{ 
+   
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: large;
+    text-transform: uppercase;
+    font-weight: bold;
+    @include md{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+}
