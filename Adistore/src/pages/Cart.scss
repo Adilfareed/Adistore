@@ -1,38 +1,117 @@
-@import"../mixins.scss";
-.cart-panel{
-    position: fixed;
-    left: 0;right: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: flex-end;
-    z-index: 99;
-.opec.layer{
-    background-color: rgba (0,0,0,0.5);
-    position: absolute ;
+@import "../mixins.scss";
+.cart-panel {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 99;
+  .opec.layer {
+    background-color: rgba (0, 0, 0, 0.5);
+    position: absolute;
     top: 0;
     left: 0;
-}
-.cart-content{
+  }
+  .cart-content {
     width: 100%;
     height: 100%;
     background: white;
     position: relative;
     z-index: 1;
     flex-direction: column;
-     transform: translateX(100%);
-     animation: slidewindow 0.3s ease forwards;
+    transform: translateX(100%);
+    animation: slidewindow 0.3s ease forwards;
     @include md {
-        width: 350px;
-        
+      width: 350px;
     }
+  }
+  .cart-header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    gap: 5px;
+    justify-content: space-between;
+    
+  }
+  .heading{
+    font-size: large;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 15px;
+    
+  }
+  .close-button{
+ 
+  cursor: pointer;
+   }
+  svg{
+    font-size: 30px;
+
+   }
+   .text{
+    justify-content: center;
+    align-items: center;
+   }
 }
+.empty-cart{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 30px;
+  svg{
+    font-size: 130px;
+  }
+}
+
+.Button{
+  margin-left: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #8e2de2;
+    border: 2px solid #8e2de2;
+    height: 40px;
+    gap: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.cart-footer{
+display: flex;
+flex-flow: row;
+justify-content: space-between;
+margin-left: 10px;
+margin-right: 10px;
+}
+.total{
+  font-size: larger;
+  font-weight:bold ;
+  text-transform: uppercase;
+
+
+}
+.price{
+  font-size: larger;
+  font-weight:bold ;
+  text-transform: uppercase;
+
+}
+.check-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @keyframes slidewindow {
-    0%{
-        transform: translateX(100%);
-    }
-    100%{
-        transform: translateX(0%);
-    }
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
