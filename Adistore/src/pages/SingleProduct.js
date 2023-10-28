@@ -8,6 +8,7 @@ import {
 } from "react-icons/fa";
 import productimg from "../images/products.jpg";
 import "./SingleProduct.scss";
+import Relatedproducts from "./Relatedproducts";
 
 const SingleProduct = () => {
   return (
@@ -20,7 +21,6 @@ const SingleProduct = () => {
           <span className="name "> Beautiful butterfly hair clip </span>
           <span className="price"> $30</span>
           <span className="desc">
-            
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
@@ -32,16 +32,18 @@ const SingleProduct = () => {
             PageMaker including versions of Lorem Ipsum.
           </span>
           <div className="cart-system">
-            <span>-</span>
-            <span>5</span>
-            <span>+</span>
-            <span>
-              <FaCartPlus /> Add To CArt
-            </span>
+            <span className="cart-minus">-</span>
+            <span className="cart-value">5</span>
+            <span className="cart-plus">+</span>
+            <span className="cart">
+            <FaCartPlus /> Add To CART
+          </span>
+
           </div>
-          <div className="icons">
-            <span> Share</span>
-            <span>
+          
+          <div   >
+            <span className="share" > Share :</span>
+            <span  className="social-icons">
               <FaFacebookF />
               <FaInstagram />
               <FaTwitter />
@@ -50,6 +52,7 @@ const SingleProduct = () => {
           </div>
         </div>
       </div>
+      <Relatedproducts/>
     </>
   );
 };
