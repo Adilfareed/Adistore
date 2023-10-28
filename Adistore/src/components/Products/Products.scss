@@ -1,26 +1,24 @@
 @import "../../mixins.scss";
-.main-container{
-    display: flex;
-    flex-flow: column;
+.main-container {
+  display: flex;
+  flex-flow: column;
 }
-.main-heading{
-    text-transform: uppercase;
-    font-size: 20px;
-    border-bottom: 2px solid purple;
+.main-heading {
+  text-transform: uppercase;
+  font-size: 20px;
+  border-bottom: 2px solid purple;
+}
+.products {
+  display: flex;
+  flex-flow: wrap;
+  gap: 10px;
 
-    
-}
-.products{
-    display: flex;
-    flex-flow : wrap;
-    gap :10px;
-   
-    margin: 5px 5px 5px 5px ;
-    @include md{
-        flex-flow: wrap;
-        gap: 20px;
-       
-        margin: 20px 20px 20px 20px ;
-        justify-content: center;
-    }
+  margin: 5px 5px 5px 5px;
+  @include md {
+    flex-flow: wrap;
+    gap: 20px;
+
+    margin: 20px 20px 20px 20px;
+    justify-content: center;
+  }
 }
