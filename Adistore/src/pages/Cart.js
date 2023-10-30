@@ -2,6 +2,7 @@ import React from 'react'
 import {MdClose} from "react-icons/md"
 import{BsCartX} from "react-icons/bs"
 import "./Cart.scss"
+import CartItem from '../components/CartItem/CartItem'
 
 const Cart = ({setshowcart}) => {
   return (
@@ -17,7 +18,9 @@ const Cart = ({setshowcart}) => {
        
           <MdClose/>
       </span>
+    
       </div>
+      <CartItem/>
      {/*div className='empty cart'>
       
         <span > <BsCartX/></span>
