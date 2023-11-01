@@ -1,0 +1,50 @@
+@import "../../mixins.scss";
+.search-item {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  background-color: white;
+}
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid rgb(57, 56, 56);
+  padding: 10px 50px;
+  position: relative;
+  @include md {
+    padding: 20px;
+  }
+  input {
+    height: 30px;
+    text-align: center;
+    font-size: large;
+    text-transform: uppercase;
+    border: none;
+    @include md {
+        width: 100%;
+      font-size: 40px;
+      max-width: 1200px;
+      height: 40px;
+    }
+    placeholder{
+        opacity: 0.01;
+    }
+  }
+  .close-btn {
+    position: fixed;
+   top: 2px;
+   right: 5px;
+    font-size: 30px;
+    @include md {
+        position: absolute;
+      font-size: 50px;
+      top: 18px;
+      right: 40px;
+      cursor: pointer;
+    }
+  }
+}
